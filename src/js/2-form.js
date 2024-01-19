@@ -1,3 +1,4 @@
+import '../css/styles.css';
 const form = document.querySelector(".feedback-form");
 const localStorageKey = "feedback-form-state";
 form.addEventListener("input", ()=> {
