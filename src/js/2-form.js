@@ -2,8 +2,8 @@ import '../css/styles.css';
 const form = document.querySelector(".feedback-form");
 const localStorageKey = "feedback-form-state";
 form.addEventListener("input", ()=> {
-    const userEmail = form.elements.email.value;
-    const userMessage = form.elements.message.value;
+    const userEmail = form.elements.email.value.trim();
+    const userMessage = form.elements.message.value.trim();
     const userData = {
         email: userEmail,
         message: userMessage,
